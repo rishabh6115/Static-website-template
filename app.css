@@ -1,0 +1,116 @@
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 80%;
+    margin: auto;
+}
+
+.panel {
+    flex-wrap: wrap;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 41, 97);
+}
+
+.pricing-plan {
+    border-right: 1px solid rgba(162, 162, 182, 0.637);
+    flex-wrap: wrap;
+    height: 39rem;
+    width: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.pricing-header {
+    margin-top: 0px;
+    color: rgb(144 138 148 / 95%)
+}
+
+.pricing-price {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #03045e;
+}
+
+.pricing-features {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    color: #023e8a;
+}
+
+.pricing-features-item {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #c3c3fda1;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.pricing-plan:nth-of-type(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pricing-plan:nth-of-type(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(153, 176, 218);
+}
+
+button {
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.7rem;
+    border-color: darkblue;
+    background-color: white;
+    font-size: 1.3rem;
+    width: 45%;
+    margin: auto;
+}
+
+#btn {
+    background-color: darkblue;
+    color: white;
+}
+
+#btn a {
+    color: white;
+}
+
+@media(max-width:930px) {
+    .panel {
+        flex-direction: column;
+        height: auto;
+    }
+    .pricing-plan {
+        border-bottom: 1px solid rgba(162, 162, 182, 0.637);
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
